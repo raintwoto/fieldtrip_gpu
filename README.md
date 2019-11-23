@@ -4,9 +4,9 @@
 
 Version 0.1: added gpu processing when using the method "wavelets", speed up 6x +
 
-## install
+## install and usage
 
-Copy the file into fieldtrip root directory
+Copy the file "ft_freqanalysis_gpu.m" into fieldtrip root directory and use "ft_freqanalysis_gpu" instead of "ft_freqanalysis"
 
 ## requirement
 
