@@ -504,7 +504,7 @@ for itrial = 1:ntrials
   switch cfg.method
     
     case 'mtmconvol'
-      [spectrum_mtmconvol,ntaper,foi,toi] = ft_specest_mtmconvol(dat, time, 'timeoi', cfg.toi, 'timwin', cfg.t_ftimwin, 'taper', ...
+      [spectrum_mtmconvol,ntaper,foi,toi] = ft_specest_mtmconvol_gpu(dat, time, 'timeoi', cfg.toi, 'timwin', cfg.t_ftimwin, 'taper', ...
         cfg.taper, options{:}, 'dimord', 'chan_time_freqtap', 'feedback', fbopt);
       
       % the following variable is created to keep track of the number of
